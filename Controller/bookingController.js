@@ -28,8 +28,8 @@ async function createPaymentSesion(req,res){
           },
         ],
         mode: 'payment',
-        success_url: 'http://localhost:3000/',
-        cancel_url: 'http://localhost:3000/',
+        success_url: 'https://meal-plan-ner.herokuapp.com',
+        cancel_url: 'https://meal-plan-ner.herokuapp.com',
       });
       res.status(200).json({session});
     }
@@ -81,7 +81,32 @@ async function createNewBooking(userEmail, planId) {
   // id => user.bookedPlanId
   // booking document.bookedPlans.push(obj);
 }
-
+async function checkoutComplete(req, res) {
+  try{
+    const END_POINT_KEY = process.env.END_POINT_KEY;
+    // console.log("Checkout complete ran !!");
+    // console.log("Request object");
+    // console.log(req);
+    const stripeSignature = req.headers["stripe-signature"];
+  
+    console.log("endpoint key = " , END_POINT_KEY);
+    console.log("stripeSign = " , stripeSignature);
+    console.log("Req.bdoy =>" , req.body);
+  
+    // if(req.body.data.type == "checkout.session.completed"){
+      const userEmail = req.body.data.object.customer_email;
+      const planId = req.body.data.object.client_reference_id;
+      await createNewBooking(userEmail , planId); 
+    // }
+  }
+  catch(error){
+    res.json({
+      error
+    })
+  }
+}
 
 module.exports.createPaymentSesion = createPaymentSesion;
+module.exports.checkoutComplete = checkoutComplete;
+module.exports.createNewBooking = createNewBooking;
     
