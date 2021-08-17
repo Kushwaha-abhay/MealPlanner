@@ -25,7 +25,7 @@ app.use("/api/users",userRouter);
 app.use("",viewsRouter);
 
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT;
 //sever
 app.listen(port, function () {
   console.log("server started at 3000");
