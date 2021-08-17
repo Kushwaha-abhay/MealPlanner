@@ -11,7 +11,7 @@ for(let i=0 ; i<buyPlansButtons.length ; i++){
             }
             else{
                 let planId = buyPlansButtons[i].getAttribute("planid");
-                let session =  await axios.post("http://localhost:3000/api/booking/createSession" , {planId : planId });
+                let session =  await axios.post("https://meal-plan-ner.herokuapp.com/api/booking/createSession" , {planId : planId });
                 console.log("session",session);
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });

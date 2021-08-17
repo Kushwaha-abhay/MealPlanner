@@ -166,7 +166,7 @@ async function forgetPassword(req, res) {
       let token = user.createPwdToken();
       console.log(token);
       await user.save({ validateBeforeSave: false });
-      let resetlink = `http://localhost:3000/resetPassword/${token}`;
+      let resetlink = `https://meal-plan-ner.herokuapp.com/resetPassword/${token}`;
       let message = {
         from:"no-reply@no-reply.com",
         to:"abhaynhes@gmail.com",

@@ -11,7 +11,7 @@ resetBtn.addEventListener("click", async function (e) {
       token = token[token.length-1];
       console.log(token);
       let obj = await axios.patch(
-        `http://localhost:3000/api/users/resetPassword/${token}`,
+        `https://meal-plan-ner.herokuapp.com/api/users/resetPassword/${token}`,
         { password: password.value, confirmPassword: confirmPassword.value }
       );
       console.log("obj", obj);

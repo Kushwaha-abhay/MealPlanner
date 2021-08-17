@@ -6,7 +6,7 @@ SendLinkBtn.addEventListener("click", async function(e){
     try{
         e.preventDefault(); // prevent page refresh
         if(email.value){
-            let obj = await axios.post( "http://localhost:3000/api/users/forgetPassword" , {email:email.value});
+            let obj = await axios.post( "https://meal-plan-ner.herokuapp.com/api/users/forgetPassword" , {email:email.value});
             console.log("obj",obj);
              if(obj.data){
                 message.innerHTML = obj.data.message;

@@ -6,7 +6,7 @@ profileImgBtn.addEventListener("change", async function(e){
     console.log("file-",file);
     let formData = new FormData();
     formData.append("user",file);
-    let ob = await axios.patch("http://localhost:3000/api/users/updateProfileImg", formData);
+    let ob = await axios.patch("https://meal-plan-ner.herokuapp.com/api/users/updateProfileImg", formData);
     console.log("ob",ob);
     if(ob.data.message){
         window.location.reload();

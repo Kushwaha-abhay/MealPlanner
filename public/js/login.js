@@ -8,7 +8,7 @@ loginBtn.addEventListener("click" , async function(e){
     try{
         e.preventDefault(); // prevent page refresh
         if(email.value && password.value){
-            let obj = await axios.post( "http://localhost:3000/api/users/login" , {email:email.value , password:password.value});
+            let obj = await axios.post( "https://meal-plan-ner.herokuapp.com/api/users/login" , {email:email.value , password:password.value});
             console.log(obj);
             if(obj.data.data){
                 window.location.href = "/";
