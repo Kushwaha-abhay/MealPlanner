@@ -1,0 +1,18 @@
+extends base.pug
+block content 
+ h2 User Page 
+  .user-container 
+   p Name : #{user.name} 
+   p Email: #{user.email} 
+   p Image 
+    img(src=user.pImage, alt="")
+    input(type="file", name="photo", id="profileImage")
+   p 
+    a(herf="/") Settings
+    if user.role =="admin"
+     p 
+      a(href="/managePlans" ) Manage Plans
+     P 
+      a(href="/manageUser") Manage User
+block scripts
+    script(src="./js/profileImage.js") 

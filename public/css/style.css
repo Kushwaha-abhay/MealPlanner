@@ -1,0 +1,575 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    
+    }
+.showcase{
+    background-image: linear-gradient(rgba(8, 8, 8, 0.411), rgb(0,0,0,1)) ,url("../img/pexels-dzenina-lukac-1583884.jpg");
+    height: 100vh;
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+.showcase-ul{
+    display: flex;
+    width: 56%;
+    justify-content: space-around;
+    list-style: none;
+    
+
+}
+.showcase-li{
+   
+}
+.showcase-li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+.showcase-li a:hover{
+    color: #F63854;
+    cursor: pointer;
+}
+.showcase-content{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+}
+#changing-text{
+    color: #F63854;
+}
+.centertext{
+    
+    font-size: 500%;
+    color: white;
+}
+.showcase-button{
+    margin-top: 30px;
+    display: flex;
+    width: 375px;
+    height: 50px;
+    justify-content: space-evenly;
+    
+}
+
+.btn{
+    height: 62px;
+    border-radius: 32px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F63854;
+    font-size: 128%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.btn-fade{
+    height: 62px;
+    border-radius: 32px;
+    color: #F63854;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F63854;
+    font-size: 128%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.btn-fade:hover{
+    transform: scale(1.2);
+    background: #F63854;
+    color: white;
+}
+.head{
+    text-align: right;
+    display: flex;
+    color:white;
+    float: right;
+    font-size: small;
+    
+}
+.items{
+    
+    padding-left: 30px;
+}
+.items:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.fixed{
+background: white;
+/* position: fixed; */
+width: 100%;
+z-index: 2;
+}
+.fixed a{
+    color: #F63854;
+}
+/*------------------*/
+/* presets */
+section {
+    padding: 4rem 5rem;
+  }
+  /* Selectors */
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  /* Header */
+  header,
+  .comments {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.849)),
+      url(../img/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-line {
+    font-size: 120%;
+    margin-right: 1.2rem;
+    margin-top: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid transparent;
+  }
+  .white-anchors {
+    color: white;
+  }
+  
+  .nav-line:hover {
+    border-bottom: 0.1rem solid #f63854;
+  }
+  /*.showcase {
+    position: absolute;
+    top: 12rem;
+    left: 14rem;
+  }*/
+  .main-heading {
+    line-height: 140%;
+    word-spacing: 0.2rem;
+    font-size: 350%;
+    color: white;
+    font-weight: 800;
+  }
+  .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: white;
+  }
+  
+  .developer {
+    color: #f63854;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: inline-block;
+    color: white;
+    margin-right: 1rem;
+    padding:0.8rem 1.6rem;
+    background-color: #f63854;
+    border-radius: 4rem;
+    border: 0.1rem solid #f63854;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  }
+  
+  .btn-empty {
+    color: #f63854;
+    background-color: transparent;
+  }
+  .btn:hover {
+    transform: scale(1.2);
+  }
+  .btn-empty:hover {
+    color: white;
+    background-color: #f63854;
+  }
+  .icon {
+    /* text-align: center; */
+    margin-left: 40%;
+    color: #f63854;
+    font-size: 300%;
+    /* padding-left: 5rem; */
+    margin-bottom: 0.9rem;
+  }
+  /* Features Section */
+  .container-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* width:100%; */
+  }
+  .container {
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+    margin-right: 1.5rem;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    width:30%;
+    transition: transform 0.4s;
+  }
+  .container:hover {
+    transform: scale(1.05);
+  }
+  h2 {
+    font-size: 225%;
+    text-align: center;
+    /* font-weight: 300; */
+    text-transform: uppercase;
+  }
+  .heading-para {
+    font-size: 130%;
+    padding: 0 8rem;
+    margin-bottom: 2rem;
+  }
+  h2::after {
+    content: "";
+    color: #f63854;
+    display: block;
+    border-bottom: solid;
+    margin: 2rem 31rem;
+    margin-bottom: 3rem;
+  }
+  h3 {
+    /* font-weight: 300; */
+    font-size: 125%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .feature-para {
+    line-height: 145%;
+  }
+  .How-to {
+   background-color:  rgb(244, 244, 244);
+  }
+  .howto-container {
+    display: flex;
+  }
+  .iphone-img {
+    width: 17%;
+    margin: 0 11%;
+  }
+  
+  .step-container {
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    /* z-index: -1rem; */
+  }
+  .step-container div {
+    color: #f63854;
+    height: 4rem;
+    width: 4rem;
+    border-color: #f63854;
+    text-align: center;
+    padding-top: 0.7rem;
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 180%;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+  /* .step-container:first-child {
+    margin-top: 3rem;
+    border: 1px solid red;
+  } */
+  .howto-para {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    /* margin-top: 1.5rem; */
+  }
+  
+  .step-val {
+    float: left;
+  }
+  .clear-fix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .comments-container {
+    margin-right: 2rem;
+  }
+  .comments-parent {
+    display: flex;
+  }
+  
+  .customer-img {
+    border-radius: 50%;
+    height: 4rem;
+  }
+  
+  cite {
+    display: block;
+    margin-top: 1rem;
+  }
+  .sticky {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1rem;
+  
+    position: fixed;
+    z-index: 100;
+    padding-bottom: 0.1;
+  }
+  /* Specificity */
+  .sticky .white-anchors {
+    color: black;
+  }
+  
+  .comments-container {
+    background-color: azure;
+    text-align: center;
+  }
+  .comments__name {
+    color: black;
+    text-transform: uppercase;
+    font-size: 140%;
+    line-height: 145%;
+    padding: 1rem;
+  }
+  
+  .comments-container p {
+    /* font-size: 140%; */
+    line-height: 145%;
+    padding-bottom: 1rem;
+  }
+  .small-icon {
+    color: #f63854;
+    margin-right: 1rem;
+  }
+  
+  /* Plans
+   */
+  .signup {
+    background-color: #f4f4f4;
+  }
+  .signup-parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .signup-child {
+    border-width: 1px;
+    border-color: rgb(134, 143, 161);
+    border-style: solid;
+    border-radius: 4%;
+    width: 29%;
+    /* margin-bottom: 4%; */
+    font-size: 120%;
+  }
+  .signup-features ul {
+    text-align: left;
+    /* font-size: 123%; */
+    line-height: 200%;
+    border-bottom: 1px solid rgb(134, 143, 161);
+    margin: 1rem;
+  }
+  
+  .signup-header {
+    padding: 3%;
+    border-bottom: 1px solid rgb(134, 143, 161);
+    line-height: 265%;
+    margin: 1rem;
+  }
+  .signup-button {
+    text-align: center;
+    position: relative;
+    /* top: 0.rem; */
+    top: 1.5rem;
+    /* left: 5rem; */
+  }
+  .pricing {
+    font-size: 300%;
+    color: #f63854;
+  }
+  /* .features { */
+  /* scale: transform(2); */
+  /* } */
+  
+  .signup-child {
+    transform: scale(0.8);
+  }
+  .active {
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    transform: scale(0.95);
+  }
+  /* form  */
+  .Input {
+    background-color: rgba(0, 0, 0, 0.664);
+  }
+  .container__parent {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .bg-video__content {
+    width: 40%;
+    position: relative;
+    top: -6rem;
+  }
+  form {
+    width: 50%;
+    height: 28rem;
+    margin: auto;
+    border: 1px solid lightgrey;
+  }
+  .entry{
+    margin-bottom:3%;
+  }
+  .entry-text {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 110%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    /* border: 2px solid grey; */
+    background-color: rgb(241, 237, 237);
+    border: none;
+    outline: none;
+    border-radius: 3%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 3%;
+  }
+  textarea {
+    height: 7rem;
+  }
+  input[type="checkbox"] {
+    margin-bottom: 5%;
+  }
+  .btn-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    transform: scale(0.8);
+    position: relative;
+    top: -5rem;
+  }
+  .checkbox-conditions {
+    margin-left: 1rem;
+  }
+  
+  footer {
+    background-color: rgb(58, 56, 56);
+    height: 130px;
+  }
+  .social-link {
+    display: flex;
+    width: 40%;
+  }
+  .text-value {
+    padding-right: 6%;
+  }
+  .footer-text {
+    display: flex;
+    width: 70%;
+    padding-right: 6%;
+  }
+  .footer-parent {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2%; */
+    padding-top: 3%;
+    padding-left: 4%;
+  }
+  .text-value a,
+  .icon-footer {
+    font-size: 160%;
+    color: white;
+  }
+  .social-link li {
+    padding-right: 10%;
+  }
+  .footer-p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 140%;
+  }
+  .sticky.other{
+    position: relative;
+  }
+  .container-grey{
+    display: flex;
+  /* height: 90vh; */
+  /* width:100vw; */
+  justify-content: center;
+  align-items: center;
+  padding:4vh;
+  }
+  .form-container{
+    width:50vw;
+  }
+  /* login page css */
+  .form-page{
+      /* margin:0 auto; */
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+    padding: 3rem 5rem;  
+  }
+  
+  
+  .heading-secondary {
+    background-color: white;
+    font-size: 225%;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff0844, #ffb199);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
+    display: inline-block;
+    margin-bottom: 7%;
+  }
+  h3.heading-para::after{
+    margin:0;
+  }
+  .btn-parent.left{
+    justify-content: left;
+  }
+  .form-links__group{
+    width: 210px;
+    margin-left: 28%;
+  }
+  .form-links{
+  color:gray;
+  margin-left:10%;
+  position: relative;
+  }
+  .form-links:hover{
+    transform: scale(1.2);
+  }

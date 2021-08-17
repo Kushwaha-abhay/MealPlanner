@@ -1,0 +1,23 @@
+extends base.pug
+block content 
+ .container-grey
+  .form-container
+   form.signup.form-page
+    h3.heading-secondary SIGNUP
+    .entry
+     .entry-text Name
+     input(type='text' id='name' placeholder='Your Name' required='')
+    .entry
+     .entry-text Email
+     input(type='email' id='email' placeholder='Your Email' required='')
+    .entry
+     .entry-text Password
+     input(type='password' name='password' id='password' placeholder='**********')
+    .entry
+     .entry-text Confirm Password
+     input(type='password' name='confirm-password' id='confirm-password' placeholder='**********')
+    .entry 
+     .btn-parent.left
+      button(type="submit").btn.btn-full.form-button.SignupBtn SIGN UP
+block scripts
+ script(src="./js/signup.js") 

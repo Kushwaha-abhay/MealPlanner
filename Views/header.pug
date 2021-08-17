@@ -1,0 +1,20 @@
+.navlinks.fixed
+  ul.showcase-ul
+    li.showcase-li
+      a(href='/') FEATURES
+    li.showcase-li
+      a(href='/details') DETAILS
+    li.showcase-li
+      a(href='/reviews') REVIEWS
+    li.showcase-li
+      a(href='/plans') PLANS
+    if name 
+     li.showcase-li #{name}
+       a(href="/profile")
+     li.showcase-li
+       a(href='/logout') LOG OUT 
+    else    
+     li.showcase-li
+       a(href='/login') LOGIN
+    
+     
