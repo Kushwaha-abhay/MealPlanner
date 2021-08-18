@@ -15,6 +15,7 @@ async function createPaymentSesion(req,res){
      const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         customer_email:user.email,
+        client_reference_id: planId,
         line_items: [
           {
             price_data: {
@@ -22,7 +23,7 @@ async function createPaymentSesion(req,res){
               product_data: {
                 name: plan.name,
               },
-              unit_amount: plan.price,
+              unit_amount: plan.price*100,
             },
             quantity: 1,
           },
